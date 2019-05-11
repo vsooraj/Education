@@ -1,0 +1,28 @@
+<h1>Enrollments</h1>
+
+<table class='table' *ngIf="enrollments">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>CourseId</th>
+      <th>Course</th>
+      <th>NoOfDays</th>
+      <th>StudentId</th>
+      <th>Student</th>
+      <th>Grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let enrollment of enrollments">
+      <td>{{ enrollment.id }}</td>
+      <td>{{ enrollment.courseId }}</td>
+      <td>{{ enrollment.course }}</td>
+      <td>{{ enrollment.noOfDays }}</td>
+      <td>{{ enrollment.studentId }}</td>
+      <td>{{ enrollment.student }}</td>
+      <td>{{ enrollment.grade }}</td>
+      <td>Edit</td>
+      <td>Delete</td>
+    </tr>
+  </tbody>
+</table>
